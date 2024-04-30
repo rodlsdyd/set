@@ -1,0 +1,56 @@
+:root {
+    --bg-card-color: rgb(255, 255, 255);
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  nav{
+     background-color: white;
+     
+     
+  }
+  
+ 
+  body {
+    background: url("../assets/bg.png") center/cover no-repeat;
+    min-height: 100vh;
+  }
+  
+
+  
+  #card-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+  }
+  
+  .movie-card {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.24);
+    margin: 20px;
+    padding: 20px;
+    width: 400px;
+    justify-self: center;
+    background-color: var(--bg-card-color);
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+    transition: transform 100ms ease-in;
+  }
+  
+  .movie-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .movie-card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .movie-card .movie-title {
+    margin-bottom: 10px;
+  }
